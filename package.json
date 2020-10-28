@@ -1,11 +1,11 @@
 {
   "name": "my-library",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "main": "src/main.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "npx et -c src/element-variables.scss",
+    "build-watch": "npx et -w -c src/element-variables.scss"
   },
   "dependencies": {
     "core-js": "^3.6.5",
