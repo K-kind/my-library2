@@ -1,11 +1,11 @@
 {
   "name": "my-library",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "private": true,
-  "main": "src/main.js",
+  "main": "src/index.js",
   "scripts": {
-    "build": "npx et -c src/element-variables.scss",
-    "build-watch": "npx et -w -c src/element-variables.scss"
+    "build": "et -c src/element-variables.scss",
+    "build-watch": "et -w -c src/element-variables.scss"
   },
   "dependencies": {
     "core-js": "^3.6.5",

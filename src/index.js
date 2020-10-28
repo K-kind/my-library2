@@ -1,3 +1,4 @@
+import locale from 'element-ui/lib/locale'
 import {
   Pagination,
   Dialog,
@@ -21,7 +22,6 @@ import {
   Select,
   Option,
   OptionGroup,
-  Button,
   ButtonGroup,
   Table,
   TableColumn,
@@ -83,7 +83,9 @@ import {
   Popconfirm,
   CollapseTransition
 } from 'element-ui'
-import locale from 'element-ui/lib/locale'
+
+/* ラップされたコンポーネント */
+import Button from 'components/Button.vue'
 
 const components = [
   Pagination,
