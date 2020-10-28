@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ElButton from 'element-ui'
+import ElButton from 'element-ui/packages/button/src/button.vue'
 
 export default {
   name: 'OButton',
