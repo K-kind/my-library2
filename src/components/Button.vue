@@ -1,5 +1,9 @@
 <template>
-  <el-button v-bind="$attrs" :type="type"><slot /></el-button>
+  <el-button
+    v-on="$listeners"
+    v-bind="$attrs"
+    :type="type"
+  ><slot /></el-button>
 </template>
 
 <script>
