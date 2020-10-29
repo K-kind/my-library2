@@ -1,3 +1,4 @@
+import locale from 'element-ui/lib/locale'
 import {
   Pagination,
   Dialog,
@@ -21,7 +22,6 @@ import {
   Select,
   Option,
   OptionGroup,
-  Button,
   ButtonGroup,
   Table,
   TableColumn,
@@ -48,7 +48,7 @@ import {
   Col,
   Upload,
   Progress,
-  // Spinner,
+  Spinner,
   Message,
   Badge,
   Card,
@@ -56,7 +56,7 @@ import {
   Steps,
   Step,
   Carousel,
-  // Scrollbar,
+  Scrollbar,
   CarouselItem,
   Collapse,
   CollapseItem,
@@ -77,13 +77,15 @@ import {
   Backtop,
   InfiniteScroll,
   PageHeader,
-  // CascaderPanel,
+  CascaderPanel,
   Avatar,
   Drawer,
   Popconfirm,
-  // CollapseTransition
+  CollapseTransition
 } from 'element-ui'
-import locale from 'element-ui/lib/locale'
+
+/* ラップされたコンポーネント */
+import Button from './components/Button.vue'
 
 const components = [
   Pagination,
@@ -132,14 +134,14 @@ const components = [
   Col,
   Upload,
   Progress,
-  // Spinner,
+  Spinner,
   Badge,
   Card,
   Rate,
   Steps,
   Step,
   Carousel,
-  // Scrollbar,
+  Scrollbar,
   CarouselItem,
   Collapse,
   CollapseItem,
@@ -159,11 +161,11 @@ const components = [
   Calendar,
   Backtop,
   PageHeader,
-  // CascaderPanel,
+  CascaderPanel,
   Avatar,
   Drawer,
   Popconfirm,
-  // CollapseTransition
+  CollapseTransition
 ]
 
 components.forEach(component => {
@@ -200,7 +202,7 @@ export default {
   locale: locale.use,
   i18n: locale.i18n,
   install,
-  // CollapseTransition,
+  CollapseTransition,
   Loading,
   Pagination,
   Dialog,
@@ -250,7 +252,7 @@ export default {
   Col,
   Upload,
   Progress,
-  // Spinner,
+  Spinner,
   Message,
   Badge,
   Card,
@@ -258,7 +260,7 @@ export default {
   Steps,
   Step,
   Carousel,
-  // Scrollbar,
+  Scrollbar,
   CarouselItem,
   Collapse,
   CollapseItem,
@@ -279,7 +281,7 @@ export default {
   Backtop,
   InfiniteScroll,
   PageHeader,
-  // CascaderPanel,
+  CascaderPanel,
   Avatar,
   Drawer,
   Popconfirm

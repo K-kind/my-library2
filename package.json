@@ -1,11 +1,11 @@
 {
   "name": "my-library",
-  "version": "0.1.0",
+  "version": "1.0.14",
   "private": true,
-  "main": "src/main.js",
+  "main": "src/index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "et -c src/element-variables.scss",
+    "build-watch": "et -w -c src/element-variables.scss"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "element-theme": "^2.0.1",
     "element-theme-chalk": "^2.13.2",
     "vue-template-compiler": "^2.6.11"
   },
