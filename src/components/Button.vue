@@ -7,12 +7,13 @@
 </template>
 
 <script>
-import ElButton from 'element-ui/packages/button/src/button.vue'
+// import ElButton from 'element-ui/packages/button/src/button.vue'
+import { Button } from 'element-ui'
 
 export default {
   name: 'OButton',
   components: {
-    ElButton
+    ElButton: Button
   },
   props: {
     type: {

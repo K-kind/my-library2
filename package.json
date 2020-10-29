@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "build": "et -c src/element-variables.scss",
-    "build-watch": "et -w -c src/element-variables.scss"
+    "build-watch": "et -w -c src/element-variables.scss",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "buid-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -13,10 +15,19 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-centered": "^5.3.21",
+    "@storybook/addon-controls": "^6.0.27",
+    "@storybook/addon-docs": "^6.0.27",
+    "@storybook/addon-links": "^6.0.27",
+    "@storybook/addon-storyshots": "^6.0.27",
+    "@storybook/addon-viewport": "^6.0.27",
+    "@storybook/vue": "^6.0.27",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "element-theme": "^2.0.1",
     "element-theme-chalk": "^2.13.2",
+    "jest-vue-preprocessor": "^1.7.1",
     "vue-template-compiler": "^2.6.11"
   },
   "vetur": {
