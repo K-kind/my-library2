@@ -13,7 +13,6 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@storybook/vue": "^6.0.27",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "element-theme-chalk": "^2.13.2",
