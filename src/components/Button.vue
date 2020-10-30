@@ -1,7 +1,8 @@
 <template>
   <el-button
     v-on="$listeners"
-    v-bind="$props"
+    v-bind="$attrs"
+    :type="type"
   ><slot /></el-button>
 </template>
 <script lang="ts">
@@ -15,7 +16,6 @@ export default defineComponent({
   },
   inheritAttrs: false,
   props: {
-    ...Button.props,
     type: {
       type: String,
       default: 'primary'

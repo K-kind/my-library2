@@ -1,14 +1,12 @@
 {
-  "name": "my-library",
-  "version": "1.0.15",
+  "name": "omosuki-new-system-ui",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "et -c src/element-variables.scss",
-    "buid-storybook": "build-storybook -s public",
-    "build-watch": "et -w -c src/element-variables.scss",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "build-variables": "et -c src/element-variables.scss",
+    "build-variables-watch": "et -w -c src/element-variables.scss"
   },
-  "main": "src/index.js",
+  "main": "src/lib-main.js",
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.18",
     "core-js": "^3.6.5",
@@ -16,19 +14,11 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.0.27",
-    "@storybook/addon-controls": "^6.0.27",
-    "@storybook/addon-docs": "^6.0.27",
-    "@storybook/addon-links": "^6.0.27",
-    "@storybook/addon-storyshots": "^6.0.27",
-    "@storybook/addon-viewport": "^6.0.27",
-    "@storybook/vue": "^6.0.27",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "^4.5.8",
     "@vue/cli-service": "~4.5.0",
     "element-theme": "^2.0.1",
     "element-theme-chalk": "^2.13.2",
-    "jest-vue-preprocessor": "^1.7.1",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },
