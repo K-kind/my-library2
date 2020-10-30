@@ -10,13 +10,13 @@
     "buid-storybook": "build-storybook -s public"
   },
   "dependencies": {
+    "@vue/composition-api": "^1.0.0-beta.18",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.0.27",
-    "@storybook/addon-centered": "^5.3.21",
     "@storybook/addon-controls": "^6.0.27",
     "@storybook/addon-docs": "^6.0.27",
     "@storybook/addon-links": "^6.0.27",

@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions'
-import Button from './../components/Button.vue'
+import lib from './../index.js'
 
 export const actionsData = {
   onClick: action('onClick'),
@@ -7,13 +7,13 @@ export const actionsData = {
 
 export default {
   title: 'Button',
-  component: Button,
-  excludeStories: /.*Data$/,
+  component: lib.Button,
+  excludeStories: /.*Data$/
 }
 
-export const Basic = (args, { argTypes }) => ({
-  components: { OButton: Button },
-  template: '<o-button @click="onClick">ボタン</o-button>',
+export const Default = (args, { argTypes }) => ({
+  components: { OButton: lib.Button },
+  template: '<o-button @click="onClick" :type="type" :size="size">ボタン</o-button>',
   props: Object.keys(argTypes),
   methods: actionsData
 })

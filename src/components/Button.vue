@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// import ElButton from 'element-ui/packages/button/src/button.vue'
 import { Button } from 'element-ui'
 
 export default {
@@ -15,6 +14,7 @@ export default {
   components: {
     ElButton: Button
   },
+  inheritAttrs: false,
   props: {
     type: {
       type: String,
