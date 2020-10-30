@@ -4,10 +4,9 @@
     v-bind="$props"
   ><slot /></el-button>
 </template>
-<script lang="ts">
+<script>
 import { defineComponent } from '@vue/composition-api'
-// import { Button } from 'element-ui'
-import ElButton from 'element-ui/packages/button/src/button.vue'
+import { Button } from 'element-ui'
 
 export default defineComponent({
   name: 'OButton',

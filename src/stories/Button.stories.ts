@@ -1,5 +1,7 @@
 import { action } from '@storybook/addon-actions'
-import lib from './../index'
+// import lib from './../index'
+// import ElButton from 'element-ui/packages/button/src/button.vue'
+import OButton from './../components/Button.vue'
 
 export const actionsData = {
   onClick: action('onClick'),
@@ -7,8 +9,11 @@ export const actionsData = {
 
 export default {
   title: 'Button',
-  component: lib.Button,
+  component: OButton,
   excludeStories: /.*Data$/,
+  // argTypes: {
+  //   round: false
+  // }
   // argTypes: {
   //   type: {
   //     control: {
@@ -38,12 +43,14 @@ export default {
 }
 
 export const Default = (args, { argTypes }) => ({
-  components: { OButton: lib.Button },
-  template: '<o-button @click="onClick" v-bind="$props">ボタン</o-button>',
+  components: { OButton: OButton },
+  template: `<o-button @click="onClick" v-bind="$props">${Object.keys(args)}</o-button>`,
   // props: lib.Button.props,
-  methods: actionsData
+  // props: Object.keys(argTypes),
+  props: Object.keys(argTypes),
+  methods: actionsData,
 })
 /* 初期値 */
-Default.args = {
-  ...lib.Button.props
-}
+// Default.args = {
+  // size: 'mini'
+// }
