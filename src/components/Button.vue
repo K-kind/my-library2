@@ -1,25 +1,26 @@
 <template>
   <el-button
     v-on="$listeners"
-    v-bind="$attrs"
-    :type="type"
+    v-bind="$props"
   ><slot /></el-button>
 </template>
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+// import { Button } from 'element-ui'
+import ElButton from 'element-ui/packages/button/src/button.vue'
 
-<script>
-import { Button } from 'element-ui'
-
-export default {
+export default defineComponent({
   name: 'OButton',
   components: {
-    ElButton: Button
+    ElButton
   },
   inheritAttrs: false,
   props: {
+    ...ElButton.props,
     type: {
       type: String,
       default: 'primary'
     }
   }
-}
+})
 </script>

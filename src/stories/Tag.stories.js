@@ -1,4 +1,5 @@
 import lib from './../index.js'
+// import Tag from 'element-ui/packages/tag/src/tag.vue'
 
 export default {
   title: 'Tag',
@@ -7,6 +8,6 @@ export default {
 
 export const Default = (args, { argTypes }) => ({
   components: { OTag: lib.Tag },
-  template: '<o-tag :type="type">タグ</o-tag>',
+  template: '<o-tag v-bind="$props">タグ</o-tag>',
   props: Object.keys(argTypes)
 })
