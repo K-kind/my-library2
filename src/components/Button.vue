@@ -4,18 +4,18 @@
     v-bind="$props"
   ><slot /></el-button>
 </template>
-<script>
+<script lang="ts">
 import { defineComponent } from '@vue/composition-api'
 import { Button } from 'element-ui'
 
 export default defineComponent({
   name: 'OButton',
   components: {
-    ElButton
+    ElButton: Button
   },
   inheritAttrs: false,
   props: {
-    ...ElButton.props,
+    ...Button.props,
     type: {
       type: String,
       default: 'primary'

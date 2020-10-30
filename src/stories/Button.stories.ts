@@ -43,7 +43,7 @@ export default {
 }
 
 export const Default = (args, { argTypes }) => ({
-  components: { OButton: OButton },
+  components: { OButton },
   template: `<o-button @click="onClick" v-bind="$props">${Object.keys(args)}</o-button>`,
   // props: lib.Button.props,
   // props: Object.keys(argTypes),
