@@ -201,7 +201,9 @@ export default {
   version: '1.0.0',
   locale: locale.use,
   i18n: locale.i18n,
-  install,
+  install
+}
+export {
   CollapseTransition,
   Loading,
   Pagination,
