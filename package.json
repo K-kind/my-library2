@@ -1,8 +1,9 @@
 {
   "name": "my-library",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
+    "build-theme": "gulp"
   },
   "main": "src/lib-main.js",
   "dependencies": {
@@ -15,6 +16,10 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "^4.5.8",
     "@vue/cli-service": "~4.5.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.1.0",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },
