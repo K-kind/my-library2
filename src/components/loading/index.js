@@ -1,11 +1,10 @@
-import directive from './src/directive';
-import service from './src/index';
+import Loading from 'element-ui/lib/loading'
 
 export default {
   install(Vue) {
-    Vue.use(directive);
-    Vue.prototype.$loading = service;
+    Vue.use(Loading.directive)
+    Vue.prototype.$loading = Loading.service
   },
   directive,
   service
-};
+}

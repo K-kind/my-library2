@@ -1,8 +1,8 @@
-import ElSubmenu from '../menu/src/submenu';
+import Component from 'element-ui/lib/submenu'
 
-/* istanbul ignore next */
-ElSubmenu.install = function(Vue) {
-  Vue.component(ElSubmenu.name, ElSubmenu);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElSubmenu;
+export default Component

@@ -1,8 +1,8 @@
-import TimeSelect from '../date-picker/src/picker/time-select';
+import Component from 'element-ui/lib/time-select'
 
-/* istanbul ignore next */
-TimeSelect.install = function(Vue) {
-  Vue.component(TimeSelect.name, TimeSelect);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default TimeSelect;
+export default Component

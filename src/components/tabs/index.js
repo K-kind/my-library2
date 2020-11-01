@@ -1,8 +1,8 @@
-import ElTabs from './src/tabs';
+import Component from 'element-ui/lib/tabs'
 
-/* istanbul ignore next */
-ElTabs.install = function(Vue) {
-  Vue.component(ElTabs.name, ElTabs);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElTabs;
+export default Component

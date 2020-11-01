@@ -1,8 +1,8 @@
-import ElTag from './src/tag';
+import Component from 'element-ui/lib/tag'
 
-/* istanbul ignore next */
-ElTag.install = function(Vue) {
-  Vue.component(ElTag.name, ElTag);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElTag;
+export default Component

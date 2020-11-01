@@ -1,2 +1,2 @@
-import Message from './src/main.js';
-export default Message;
+import Message from 'element-ui/lib/message'
+export default Message

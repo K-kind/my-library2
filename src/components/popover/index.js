@@ -1,14 +1,9 @@
-import Popover from './src/main';
-import directive from './src/directive';
-import Vue from 'vue';
+import Popover from 'element-ui/lib/popover'
 
-Vue.directive('popover', directive);
-
-/* istanbul ignore next */
+Popover.name = Popover.name.replace(/^El/, 'O')
 Popover.install = function(Vue) {
-  Vue.directive('popover', directive);
-  Vue.component(Popover.name, Popover);
-};
-Popover.directive = directive;
+  Vue.directive('popover', Popover.directive)
+  Vue.component(Popover.name, Popover)
+}
 
-export default Popover;
+export default Popover

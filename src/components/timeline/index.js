@@ -1,8 +1,8 @@
-import Timeline from './src/main';
+import Component from 'element-ui/lib/timeline'
 
-/* istanbul ignore next */
-Timeline.install = function(Vue) {
-  Vue.component(Timeline.name, Timeline);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Timeline;
+export default Component

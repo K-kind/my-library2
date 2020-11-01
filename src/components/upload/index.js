@@ -1,8 +1,8 @@
-import Upload from './src';
+import Component from 'element-ui/lib/upload'
 
-/* istanbul ignore next */
-Upload.install = function(Vue) {
-  Vue.component(Upload.name, Upload);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Upload;
+export default Component

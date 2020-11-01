@@ -1,8 +1,8 @@
-import Tooltip from './src/main';
+import Component from 'element-ui/lib/tooltip'
 
-/* istanbul ignore next */
-Tooltip.install = function(Vue) {
-  Vue.component(Tooltip.name, Tooltip);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Tooltip;
+export default Component

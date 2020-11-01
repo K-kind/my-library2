@@ -1,8 +1,8 @@
-import TimePicker from '../date-picker/src/picker/time-picker';
+import Component from 'element-ui/lib/time-picker'
 
-/* istanbul ignore next */
-TimePicker.install = function(Vue) {
-  Vue.component(TimePicker.name, TimePicker);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default TimePicker;
+export default Component

@@ -1,8 +1,8 @@
-import Tree from './src/tree.vue';
+import Component from 'element-ui/lib/tree'
 
-/* istanbul ignore next */
-Tree.install = function(Vue) {
-  Vue.component(Tree.name, Tree);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Tree;
+export default Component

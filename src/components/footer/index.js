@@ -1,8 +1,8 @@
-import Footer from './src/main';
+import Component from 'element-ui/lib/footer'
 
-/* istanbul ignore next */
-Footer.install = function(Vue) {
-  Vue.component(Footer.name, Footer);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Footer;
+export default Component

@@ -1,8 +1,8 @@
-import RadioGroup from '../radio/src/radio-group.vue';
+import Component from 'element-ui/lib/radio-group'
 
-/* istanbul ignore next */
-RadioGroup.install = function(Vue) {
-  Vue.component(RadioGroup.name, RadioGroup);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default RadioGroup;
+export default Component

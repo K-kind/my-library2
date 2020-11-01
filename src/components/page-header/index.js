@@ -1,8 +1,8 @@
-import PageHeader from './src/main';
+import Component from 'element-ui/lib/page-header'
 
-/* istanbul ignore next */
-PageHeader.install = function(Vue) {
-  Vue.component(PageHeader.name, PageHeader);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default PageHeader;
+export default Component

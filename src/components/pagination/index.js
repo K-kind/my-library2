@@ -1,8 +1,8 @@
-import Pagination from './src/pagination';
+import Component from 'element-ui/lib/pagination'
 
-/* istanbul ignore next */
-Pagination.install = function(Vue) {
-  Vue.component(Pagination.name, Pagination);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Pagination;
+export default Component

@@ -1,8 +1,8 @@
-import Steps from './src/steps';
+import Component from 'element-ui/lib/steps'
 
-/* istanbul ignore next */
-Steps.install = function(Vue) {
-  Vue.component(Steps.name, Steps);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Steps;
+export default Component

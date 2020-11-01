@@ -1,9 +1,8 @@
-import Switch from './src/component';
+import Component from 'element-ui/lib/switch'
 
-/* istanbul ignore next */
-Switch.install = function(Vue) {
-  Vue.component(Switch.name, Switch);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Switch;
-
+export default Component

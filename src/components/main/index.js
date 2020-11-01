@@ -1,8 +1,8 @@
-import Main from './src/main';
+import Component from 'element-ui/lib/main'
 
-/* istanbul ignore next */
-Main.install = function(Vue) {
-  Vue.component(Main.name, Main);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Main;
+export default Component

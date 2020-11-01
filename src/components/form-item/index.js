@@ -1,8 +1,8 @@
-import ElFormItem from '../form/src/form-item';
+import Component from 'element-ui/lib/form-item'
 
-/* istanbul ignore next */
-ElFormItem.install = function(Vue) {
-  Vue.component(ElFormItem.name, ElFormItem);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElFormItem;
+export default Component

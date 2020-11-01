@@ -1,8 +1,8 @@
-import Image from './src/main';
+import Component from 'element-ui/lib/image'
 
-/* istanbul ignore next */
-Image.install = function(Vue) {
-  Vue.component(Image.name, Image);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Image;
+export default Component

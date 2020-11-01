@@ -1,8 +1,8 @@
-import Transfer from './src/main';
+import Component from 'element-ui/lib/transfer'
 
-/* istanbul ignore next */
-Transfer.install = function(Vue) {
-  Vue.component(Transfer.name, Transfer);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Transfer;
+export default Component

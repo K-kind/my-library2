@@ -1,8 +1,8 @@
-import ElTimelineItem from '../timeline/src/item';
+import Component from 'element-ui/lib/timeline-item'
 
-/* istanbul ignore next */
-ElTimelineItem.install = function(Vue) {
-  Vue.component(ElTimelineItem.name, ElTimelineItem);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElTimelineItem;
+export default Component

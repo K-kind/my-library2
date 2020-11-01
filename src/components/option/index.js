@@ -1,8 +1,8 @@
-import ElOption from '../select/src/option';
+import Component from 'element-ui/lib/option'
 
-/* istanbul ignore next */
-ElOption.install = function(Vue) {
-  Vue.component(ElOption.name, ElOption);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElOption;
+export default Component

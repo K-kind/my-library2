@@ -1,8 +1,8 @@
-import InfiniteScroll from './src/main.js';
+import Component from 'element-ui/lib/infinite-scroll'
 
-/* istanbul ignore next */
-InfiniteScroll.install = function(Vue) {
-  Vue.directive(InfiniteScroll.name, InfiniteScroll);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.directive(Component.name, Component)
+}
 
-export default InfiniteScroll;
+export default Component

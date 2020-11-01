@@ -1,8 +1,8 @@
-import Radio from './src/radio';
+import Component from 'element-ui/lib/radio'
 
-/* istanbul ignore next */
-Radio.install = function(Vue) {
-  Vue.component(Radio.name, Radio);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Radio;
+export default Component

@@ -1,8 +1,8 @@
-import Header from './src/main';
+import Component from 'element-ui/lib/header'
 
-/* istanbul ignore next */
-Header.install = function(Vue) {
-  Vue.component(Header.name, Header);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Header;
+export default Component

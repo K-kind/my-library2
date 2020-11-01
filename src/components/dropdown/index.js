@@ -1,8 +1,8 @@
-import ElDropdown from './src/dropdown';
+import Component from 'element-ui/lib/dropdown'
 
-/* istanbul ignore next */
-ElDropdown.install = function(Vue) {
-  Vue.component(ElDropdown.name, ElDropdown);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElDropdown;
+export default Component

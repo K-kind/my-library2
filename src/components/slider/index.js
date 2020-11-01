@@ -1,8 +1,8 @@
-import Slider from './src/main';
+import Component from 'element-ui/lib/slider'
 
-/* istanbul ignore next */
-Slider.install = function(Vue) {
-  Vue.component(Slider.name, Slider);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Slider;
+export default Component

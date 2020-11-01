@@ -1,8 +1,8 @@
-import TabPane from '../tabs/src/tab-pane.vue';
+import Component from 'element-ui/lib/tab-pane'
 
-/* istanbul ignore next */
-TabPane.install = function(Vue) {
-  Vue.component(TabPane.name, TabPane);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default TabPane;
+export default Component

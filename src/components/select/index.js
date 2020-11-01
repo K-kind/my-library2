@@ -1,8 +1,8 @@
-import Select from './src/select';
+import Component from 'element-ui/lib/select'
 
-/* istanbul ignore next */
-Select.install = function(Vue) {
-  Vue.component(Select.name, Select);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Select;
+export default Component

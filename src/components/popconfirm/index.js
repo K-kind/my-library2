@@ -1,8 +1,8 @@
-import Popconfirm from './src/main';
+import Component from 'element-ui/lib/popconfirm'
 
-/* istanbul ignore next */
-Popconfirm.install = function(Vue) {
-  Vue.component(Popconfirm.name, Popconfirm);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Popconfirm;
+export default Component

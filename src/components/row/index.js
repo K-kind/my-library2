@@ -1,9 +1,8 @@
-import Row from './src/row';
+import Component from 'element-ui/lib/row'
 
-/* istanbul ignore next */
-Row.install = function(Vue) {
-  Vue.component(Row.name, Row);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Row;
-
+export default Component

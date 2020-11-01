@@ -1,8 +1,8 @@
-import Scrollbar from './src/main';
+import Component from 'element-ui/lib/scrollbar'
 
-/* istanbul ignore next */
-Scrollbar.install = function(Vue) {
-  Vue.component(Scrollbar.name, Scrollbar);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Scrollbar;
+export default Component

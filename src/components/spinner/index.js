@@ -1,8 +1,8 @@
-import Spinner from './src/spinner';
+import Component from 'element-ui/lib/spinner'
 
-/* istanbul ignore next */
-Spinner.install = function(Vue) {
-  Vue.component(Spinner.name, Spinner);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Spinner;
+export default Component

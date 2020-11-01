@@ -1,8 +1,8 @@
-import Link from './src/main';
+import Component from 'element-ui/lib/link'
 
-/* istanbul ignore next */
-Link.install = function(Vue) {
-  Vue.component(Link.name, Link);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Link;
+export default Component

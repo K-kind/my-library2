@@ -1,8 +1,8 @@
-import Rate from './src/main';
+import Component from 'element-ui/lib/rate'
 
-/* istanbul ignore next */
-Rate.install = function(Vue) {
-  Vue.component(Rate.name, Rate);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Rate;
+export default Component

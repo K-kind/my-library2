@@ -1,8 +1,8 @@
-import ElOptionGroup from '../select/src/option-group';
+import Component from 'element-ui/lib/option-group'
 
-/* istanbul ignore next */
-ElOptionGroup.install = function(Vue) {
-  Vue.component(ElOptionGroup.name, ElOptionGroup);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElOptionGroup;
+export default Component
