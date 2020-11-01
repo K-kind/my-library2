@@ -1,17 +1,18 @@
 {
   "name": "my-library",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "private": true,
   "scripts": {
     "build-theme": "gulp",
     "build-index": "webpack --config build/webpack.common.js",
-    "build-components": "webpack --config build/webpack.component.js"
+    "build-components": "webpack --config build/webpack.component.js",
+    "build:utils": "cp -r node_modules/element-ui/lib ."
   },
   "main": "lib/lib-main.common.js",
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.18",
     "core-js": "^3.6.5",
-    "element-ui": "^2.13.2",
+    "element-ui": "^2.14.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -24,7 +25,6 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^4.1.0",
-    "progress-bar-webpack-plugin": "^2.1.0",
     "style-loader": "^2.0.0",
     "typescript": "~3.9.3",
     "url-loader": "^4.1.1",
