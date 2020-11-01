@@ -49,7 +49,7 @@
   "progress": "./node_modules/element-ui/packages/progress/index.js",
   "spinner": "./node_modules/element-ui/packages/spinner/index.js",
   "message": "./node_modules/element-ui/packages/message/index.js",
-  "badge": "./node_modules/element-ui/packages/badge/index.js",
+  "badge": "./src/components/badge/index.js",
   "card": "./node_modules/element-ui/packages/card/index.js",
   "rate": "./node_modules/element-ui/packages/rate/index.js",
   "steps": "./node_modules/element-ui/packages/steps/index.js",

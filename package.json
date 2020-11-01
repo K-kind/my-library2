@@ -1,12 +1,12 @@
 {
   "name": "my-library",
-  "version": "2.2.4",
+  "version": "2.2.5",
   "private": true,
   "scripts": {
-    "build-theme": "gulp",
-    "build-index": "webpack --config build/webpack.common.js",
-    "build-components": "webpack --config build/webpack.component.js",
-    "build:utils": "cp -r node_modules/element-ui/lib ."
+    "build:theme": "gulp",
+    "build:index": "webpack --config build/webpack.common.js",
+    "build:components": "webpack --config build/webpack.component.js",
+    "copy:utils": "cp -r node_modules/element-ui/lib ."
   },
   "main": "lib/lib-main.common.js",
   "dependencies": {
