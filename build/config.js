@@ -33,10 +33,10 @@ externals = [Object.assign({
 exports.externals = externals;
 
 exports.alias = {
-  // main: path.resolve(__dirname, '../src'),
-  // packages: path.resolve(__dirname, '../packages'),
-  // examples: path.resolve(__dirname, '../examples'),
-  // 'element-ui': path.resolve(__dirname, '../')
+  // main: path.resolve(__dirname, '../node_modules/element-ui/src'),
+  // packages: path.resolve(__dirname, '../node_modules/element-ui/packages'),
+  // examples: path.resolve(__dirname, '../node_modules/element-ui/examples'),
+  // 'element-ui': path.resolve(__dirname, '../node_modules/element-ui/')
 };
 
 exports.vue = {
@@ -46,4 +46,5 @@ exports.vue = {
   amd: 'vue'
 };
 
-exports.jsexclude = /node_modules|utils\/popper\.js|utils\/date\.js/;
+// exports.jsexclude = /node_modules\/(?!element-ui).*|utils\/popper\.js|utils\/date\.js/;
+exports.jsexclude = /utils\/popper\.js|utils\/date\.js/;

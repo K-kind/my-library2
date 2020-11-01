@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "build-theme": "gulp",
-    "build-index": "webpack --config build/webpack.common.js"
+    "build-index": "webpack --config build/webpack.common.js",
+    "build-components": "webpack --config build/webpack.component.js"
   },
   "main": "lib/lib-main.common.js",
   "dependencies": {
@@ -23,6 +24,7 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-sass": "^4.1.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
     "style-loader": "^2.0.0",
     "typescript": "~3.9.3",
     "url-loader": "^4.1.1",

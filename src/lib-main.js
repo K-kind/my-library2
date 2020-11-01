@@ -85,7 +85,7 @@ import {
 } from 'element-ui'
 
 /* ラップされたコンポーネント */
-import Button from './components/Button.vue'
+import Button from './components/button/index.js'
 
 const components = [
   Pagination,
