@@ -7,12 +7,12 @@
 </template>
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
-import { Button } from 'element-ui'
+import ElButton from 'element-ui/lib/button'
 
 export default defineComponent({
   name: 'OButton',
   components: {
-    ElButton: Button
+    ElButton
   },
   inheritAttrs: false,
   props: {
