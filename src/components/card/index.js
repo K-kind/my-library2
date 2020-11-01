@@ -1,8 +1,8 @@
-import Card from './src/main';
+import Component from 'element-ui/lib/card'
 
-/* istanbul ignore next */
-Card.install = function(Vue) {
-  Vue.component(Card.name, Card);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Card;
+export default Component

@@ -1,8 +1,8 @@
-import DatePicker from './src/picker/date-picker';
+import Component from 'element-ui/lib/datePicker'
 
-/* istanbul ignore next */
-DatePicker.install = function install(Vue) {
-  Vue.component(DatePicker.name, DatePicker);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default DatePicker;
+export default Component

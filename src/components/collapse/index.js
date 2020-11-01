@@ -1,9 +1,8 @@
-import ElCollapse from './src/collapse';
+import Component from 'element-ui/lib/collapse'
 
-/* istanbul ignore next */
-ElCollapse.install = function(Vue) {
-  Vue.component(ElCollapse.name, ElCollapse);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElCollapse;
-
+export default Component

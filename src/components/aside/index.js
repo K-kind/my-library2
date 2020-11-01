@@ -1,8 +1,8 @@
-import Aside from 'element-ui/lib/aside'
+import Component from 'element-ui/lib/aside'
 
-Aside.name = Aside.name.replace(/^El/, 'O')
-Aside.install = function(Vue) {
-  Vue.component(Aside.name, Aside)
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
 }
 
-export default Aside
+export default Component

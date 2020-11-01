@@ -1,8 +1,8 @@
-import Cascader from './src/cascader';
+import Component from 'element-ui/lib/cascader'
 
-/* istanbul ignore next */
-Cascader.install = function(Vue) {
-  Vue.component(Cascader.name, Cascader);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Cascader;
+export default Component

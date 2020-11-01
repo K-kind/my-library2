@@ -1,8 +1,8 @@
-import Divider from './src/main';
+import Component from 'element-ui/lib/divider'
 
-/* istanbul ignore next */
-Divider.install = function(Vue) {
-  Vue.component(Divider.name, Divider);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Divider;
+export default Component

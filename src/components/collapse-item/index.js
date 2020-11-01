@@ -1,8 +1,8 @@
-import ElCollapseItem from '../collapse/src/collapse-item.vue';
+import Component from 'element-ui/lib/collapseItem'
 
-/* istanbul ignore next */
-ElCollapseItem.install = function(Vue) {
-  Vue.component(ElCollapseItem.name, ElCollapseItem);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElCollapseItem;
+export default Component

@@ -1,8 +1,8 @@
-import ElDialog from './src/component';
+import Component from 'element-ui/lib/dialog'
 
-/* istanbul ignore next */
-ElDialog.install = function(Vue) {
-  Vue.component(ElDialog.name, ElDialog);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElDialog;
+export default Component

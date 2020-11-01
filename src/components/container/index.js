@@ -1,8 +1,8 @@
-import Container from './src/main';
+import Component from 'element-ui/lib/container'
 
-/* istanbul ignore next */
-Container.install = function(Vue) {
-  Vue.component(Container.name, Container);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Container;
+export default Component

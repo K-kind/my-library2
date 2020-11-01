@@ -1,8 +1,8 @@
-import Autocomplete from 'element-ui/lib/autocomplete'
+import Component from 'element-ui/lib/autocomplete'
 
-Autocomplete.name = Autocomplete.name.replace(/^El/, 'O')
-Autocomplete.install = function(Vue) {
-  Vue.component(Autocomplete.name, Autocomplete)
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
 }
 
-export default ElAutocomplete
+export default ElComponent

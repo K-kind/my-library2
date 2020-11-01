@@ -1,8 +1,8 @@
-import BreadcrumbItem from 'element-ui/lib/breadcrumb-item'
+import Component from 'element-ui/lib/breadcrumb-item'
 
-BreadcrumbItem.name = BreadcrumbItem.name.replace(/^El/, 'O')
-BreadcrumbItem.install = function(Vue) {
-  Vue.component(BreadcrumbItem.name, BreadcrumbItem)
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
 }
 
-export default BreadcrumbItem
+export default Component

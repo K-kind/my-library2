@@ -1,8 +1,8 @@
-import Carousel from './src/main';
+import Component from 'element-ui/lib/carousel'
 
-/* istanbul ignore next */
-Carousel.install = function(Vue) {
-  Vue.component(Carousel.name, Carousel);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Carousel;
+export default Component

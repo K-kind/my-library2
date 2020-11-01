@@ -1,8 +1,8 @@
-import ElCarouselItem from '../carousel/src/item';
+import Component from 'element-ui/lib/carousel-item'
 
-/* istanbul ignore next */
-ElCarouselItem.install = function(Vue) {
-  Vue.component(ElCarouselItem.name, ElCarouselItem);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElCarouselItem;
+export default Component

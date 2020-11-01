@@ -1,8 +1,8 @@
-import Backtop from 'element-ui/lib/backtop'
+import Component from 'element-ui/lib/backtop'
 
-Backtop.name = Backtop.name.replace(/^El/, 'O')
-Backtop.install = function(Vue) {
-  Vue.component(Backtop.name, Backtop)
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
 }
 
-export default Backtop
+export default Component

@@ -1,9 +1,9 @@
-import ElCol from './src/col';
+import Component from 'element-ui/lib/col'
 
-/* istanbul ignore next */
-ElCol.install = function(Vue) {
-  Vue.component(ElCol.name, ElCol);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default ElCol;
+export default Component
 

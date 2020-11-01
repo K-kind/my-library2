@@ -1,8 +1,8 @@
-import Drawer from './src/main';
+import Component from 'element-ui/lib/drawer'
 
-/* istanbul ignore next */
-Drawer.install = function(Vue) {
-  Vue.component(Drawer.name, Drawer);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Drawer;
+export default Component

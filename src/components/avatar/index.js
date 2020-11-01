@@ -1,8 +1,8 @@
-import Avatar from 'element-ui/lib/avatar'
+import Component from 'element-ui/lib/avatar'
 
-Avatar.name = Avatar.name.replace(/^El/, 'O')
-Avatar.install = function(Vue) {
-  Vue.component(Avatar.name, Avatar)
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
 }
 
-export default Avatar
+export default Component

@@ -1,8 +1,8 @@
-import CascaderPanel from './src/cascader-panel';
+import Component from 'element-ui/lib/cascader-panel'
 
-/* istanbul ignore next */
-CascaderPanel.install = function(Vue) {
-  Vue.component(CascaderPanel.name, CascaderPanel);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default CascaderPanel;
+export default Component

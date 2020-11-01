@@ -1,8 +1,8 @@
-import Calendar from './src/main';
+import Component from 'element-ui/lib/calendar'
 
-/* istanbul ignore next */
-Calendar.install = function(Vue) {
-  Vue.component(Calendar.name, Calendar);
-};
+Component.name = Component.name.replace(/^El/, 'O')
+Component.install = function(Vue) {
+  Vue.component(Component.name, Component)
+}
 
-export default Calendar;
+export default Component
