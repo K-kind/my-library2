@@ -5,4 +5,4 @@ Component.install = function(Vue) {
   Vue.component(Component.name, Component)
 }
 
-export default ElComponent
+export default Component
