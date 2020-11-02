@@ -1,4 +1,4 @@
-import Component from 'element-ui/lib/datePicker'
+import Component from 'element-ui/lib/date-picker'
 
 Component.name = Component.name.replace(/^El/, 'O')
 Component.install = function(Vue) {

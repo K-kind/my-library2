@@ -1,4 +1,4 @@
-import Component from 'element-ui/lib/colorPicker'
+import Component from 'element-ui/lib/color-picker'
 
 Component.name = Component.name.replace(/^El/, 'O')
 Component.install = function(Vue) {
