@@ -5,6 +5,6 @@ export default {
     Vue.use(Loading.directive)
     Vue.prototype.$loading = Loading.service
   },
-  directive,
-  service
+  directive: Loading.directive,
+  service: Loading.service
 }
