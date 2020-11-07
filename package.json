@@ -10,6 +10,12 @@
     "copy:utils": "cp -r node_modules/element-ui/lib ."
   },
   "main": "lib/lib-main.common.js",
+  "files": [
+    "lib",
+    "src",
+    "theme",
+    "vetur"
+  ],
   "dependencies": {
     "@vue/composition-api": "^1.0.0-beta.18",
     "core-js": "^3.6.5",
