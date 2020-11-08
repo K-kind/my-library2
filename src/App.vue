@@ -1,8 +1,8 @@
 <template>
   <div>
-    <o-button loading></o-button>
+    <o-button></o-button>
     <i class="mdi-arrow-up"></i>
-    <o-dialog visible>
+    <o-dialog>
       テストダイアログ
     </o-dialog>
   </div>
