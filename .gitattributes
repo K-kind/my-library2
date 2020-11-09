@@ -1,2 +1,2 @@
-lib linguist-generated=true
-theme linguist-generated=true
+lib/* linguist-generated=true
+theme/* linguist-generated=true
