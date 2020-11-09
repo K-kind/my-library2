@@ -3,7 +3,7 @@
     v-on="$listeners"
     v-bind="$attrs"
     :type="type"
-  ><slot /></el-button>
+  ><slot>ボタン</slot></el-button>
 </template>
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'

@@ -10,7 +10,8 @@ function compile() {
   const customVarsPath = path.resolve(process.cwd(), 'src/custom-variables.scss')
   fs.writeFileSync(varsPath, fs.readFileSync(customVarsPath), 'utf-8')
 
-  return src('copied-thalk-src/*.scss')
+  // return src('copied-thalk-src/*.scss')
+  return src('node_modules/element-ui/packages/theme-chalk/src/*.scss')
     .pipe(sass.sync())
     .pipe(autoprefixer({
       cascade: false
@@ -20,8 +21,8 @@ function compile() {
 }
 
 function copyfont() {
-  // return src('node_modules/element-ui/packages/theme-chalk/src/fonts/**')
-  return src('copied-thalk-src/fonts/**')
+  // return src('copied-thalk-src/fonts/**')
+  return src('node_modules/element-ui/packages/theme-chalk/src/fonts/**')
     .pipe(cssmin())
     .pipe(dest('./theme/fonts'))
 }

@@ -1,25 +1,23 @@
 @import "common/var";
-// $material-design-icons-font-directory-path: '../node_modules/material-design-icons-iconfont/dist/fonts/';
-// @import '../node_modules/material-design-icons-iconfont/src/material-design-icons';
-
-// @font-face {
-//   font-family: 'element-icons';
-//   src: url('#{$--font-path}/element-icons.woff') format('woff'), /* chrome, firefox */
-//        url('#{$--font-path}/element-icons.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-//   font-weight: normal;
-//   font-display: $--font-display;
-//   font-style: normal;
-// }
 
 @font-face {
-  font-family: 'Material-rounded';
-  src:
-    url('fonts/Material-rounded.ttf?n68mdh') format('truetype'),
-    url('fonts/Material-rounded.woff?n68mdh') format('woff');
+  font-family: 'element-icons';
+  src: url('#{$--font-path}/element-icons.woff') format('woff'), /* chrome, firefox */
+       url('#{$--font-path}/element-icons.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   font-weight: normal;
+  font-display: $--font-display;
   font-style: normal;
-  font-display: block;
 }
+
+// @font-face {
+//   font-family: 'Material-rounded';
+//   src:
+//     url('fonts/Material-rounded.ttf?n68mdh') format('truetype'),
+//     url('fonts/Material-rounded.woff?n68mdh') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
 
 [class^="mdi-"], [class*=" mdi-"], [class^="el-icon-"], [class*=" el-icon-"]  {
   /* use !important to prevent issues with browser extensions that change fonts */
