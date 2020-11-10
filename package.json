@@ -1,7 +1,7 @@
 {
   "name": "my-library",
   "version": "2.2.14",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:theme": "gulp",
