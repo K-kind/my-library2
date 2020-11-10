@@ -25,6 +25,7 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://npm.pkg.github.com'
       - run: |
+          npm install
           npm run build:all
           npm publish
         env:
