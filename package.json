@@ -1,5 +1,5 @@
 {
-  "name": "my-library",
+  "name": "@k-kind/my-library",
   "version": "2.2.14",
   "private": false,
   "scripts": {
