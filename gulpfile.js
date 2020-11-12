@@ -11,7 +11,7 @@ function compile() {
   fs.writeFileSync(varsPath, fs.readFileSync(customVarsPath), 'utf-8')
 
   // return src('copied-thalk-src/*.scss')
-  return src('node_modules/element-ui/packages/theme-chalk/src/*.scss')
+  return src(['node_modules/element-ui/packages/theme-chalk/src/*.scss', '!node_modules/element-ui/packages/theme-chalk/src/icon.scss'])
     .pipe(sass.sync())
     .pipe(autoprefixer({
       cascade: false
@@ -20,11 +20,12 @@ function compile() {
     .pipe(dest('./theme'))
 }
 
-function copyfont() {
-  // return src('copied-thalk-src/fonts/**')
-  return src('node_modules/element-ui/packages/theme-chalk/src/fonts/**')
-    .pipe(cssmin())
-    .pipe(dest('./theme/fonts'))
-}
+// function copyfont() {
+//   // return src('copied-thalk-src/fonts/**')
+//   return src('node_modules/element-ui/packages/theme-chalk/src/fonts/**')
+//     .pipe(cssmin())
+//     .pipe(dest('./theme/fonts'))
+// }
 
-exports.default = series(compile, copyfont)
+exports.default = series(compile)
+// exports.default = series(compile, copyfont)
