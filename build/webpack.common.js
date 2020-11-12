@@ -50,6 +50,20 @@ module.exports = {
         }
       },
       {
+        test: /\.scss$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+          { loader: 'sass-loader' },
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: path.resolve(__dirname, '../src/variables.scss')
+            }
+          }
+        ]
+      },
+      {
         test: /\.css$/,
         loaders: ['style-loader', 'css-loader']
       },

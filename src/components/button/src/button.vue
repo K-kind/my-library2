@@ -23,3 +23,8 @@ export default defineComponent({
   }
 })
 </script>
+<style lang="scss">
+.el-button {
+  color: $main-color;
+}
+</style>
