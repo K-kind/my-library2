@@ -1,6 +1,6 @@
 {
   "name": "@k-kind/my-library",
-  "version": "2.2.15",
+  "version": "2.2.16",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -13,7 +13,7 @@
     "url": "git://github.com/K-kind/my-library2.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "lib/lib-main.common.js",
   "dependencies": {
