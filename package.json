@@ -1,14 +1,19 @@
 {
-  "name": "my-library",
-  "version": "2.2.14",
-  "private": true,
+  "name": "@k-kind/my-library",
+  "version": "2.2.15",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:theme": "gulp",
-    "build:index": "webpack --config build/webpack.common.js",
-    "build:components": "webpack --config build/webpack.component.js",
-    "copy:utils": "cp -r node_modules/element-ui/lib .",
-    "install": "npm run build:theme && npm run build:index"
+    "build:components": "webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
+    "build:all": "npm run build:theme && npm run build:components"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/K-kind/my-library2.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "main": "lib/lib-main.common.js",
   "dependencies": {
