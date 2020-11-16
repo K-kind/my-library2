@@ -5,6 +5,7 @@
       <o-tab-pane label="Config">Config</o-tab-pane>
       <o-tab-pane label="Role">Role</o-tab-pane>
       <o-tab-pane label="Task">Task</o-tab-pane>
+      branch3
     </o-tabs>
   </div>
 </template>
