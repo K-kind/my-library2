@@ -1,6 +1,5 @@
-import Component from 'element-ui/lib/form-item'
+import Component from './src/form-item'
 
-Component.name = Component.name.replace(/^El/, 'O')
 Component.install = function(Vue) {
   Vue.component(Component.name, Component)
 }

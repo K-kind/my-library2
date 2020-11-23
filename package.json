@@ -1,10 +1,12 @@
 {
   "name": "@k-kind/my-library",
-  "version": "2.2.17",
+  "version": "2.2.18",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:theme": "gulp",
+    "build:index": "webpack --config build/webpack.common.js",
+    "build:ondemand": "webpack --config build/webpack.component.js",
     "build:components": "webpack --config build/webpack.common.js && webpack --config build/webpack.component.js",
     "build:all": "npm run build:theme && npm run build:components"
   },
@@ -42,6 +44,7 @@
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.0",
     "sass-resources-loader": "^2.1.1",
+    "ts-loader": "^8.0.11",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.12"
   },

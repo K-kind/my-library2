@@ -104,7 +104,7 @@ module.exports = {
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.ts', '.js', '.vue', '.json'],
     // alias: config.alias,
     modules: ['node_modules']
   },
@@ -119,10 +119,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.ts$/,
+        exclude: /node_modules/,
+        loader: 'ts-loader',
+        options: {
+          appendTsSuffixTo: [/\.vue$/]
+        }
+      },
+      {
         test: /\.(jsx?|babel|es6)$/,
         include: [
-          path.resolve(__dirname, "../src"),
-          path.resolve(__dirname, "../node_modules/element-ui/packages")
+          path.resolve(__dirname, '../src'),
+          path.resolve(__dirname, '../node_modules/element-ui/packages')
         ],
         // exclude: config.jsexclude,
         loader: 'babel-loader'

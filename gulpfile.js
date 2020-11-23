@@ -20,12 +20,12 @@ function compile() {
     .pipe(dest('./theme'))
 }
 
-// function copyfont() {
-//   // return src('copied-thalk-src/fonts/**')
-//   return src('node_modules/element-ui/packages/theme-chalk/src/fonts/**')
-//     .pipe(cssmin())
-//     .pipe(dest('./theme/fonts'))
-// }
+function copyfont() {
+  // return src('copied-thalk-src/fonts/**')
+  return src('node_modules/element-ui/packages/theme-chalk/src/fonts/**')
+    .pipe(cssmin())
+    .pipe(dest('./theme/fonts'))
+}
 
-exports.default = series(compile)
-// exports.default = series(compile, copyfont)
+// exports.default = series(compile)
+exports.default = series(compile, copyfont)
