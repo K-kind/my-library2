@@ -5,7 +5,7 @@
     ref="ruleForm"
     @submit.native.prevent="submit"
   >
-    <slot />
+    <slot v-bind:is-loading="isLoading" />
   </el-form>
 </template>
 <script lang="ts">
@@ -20,12 +20,21 @@ export default defineComponent({
   inheritAttrs: false,
   setup: (_, { emit }) => {
     const state = reactive({
-      ruleForm: null
+      ruleForm: null,
+      isLoading: false
     })
+
+    const stopLoading = () => {
+      state.isLoading = false
+    }
     const submit = (event) => {
       state.ruleForm.validate((valid) => {
         if (valid) {
-          emit('valid-submit', event)
+          emit('valid-submit', {
+            event,
+            stopLoading
+          })
+          state.isLoading = true
         }
       })
     }
